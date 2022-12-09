@@ -190,22 +190,22 @@ ul {
 }
 
 .trends_card {
-  background-image: url('/images/trend1.jpg');
+  background-image: url(../images/trend1.jpg);
   background-size: cover;
   min-height: 320px;
 }
 
 .trends_card:nth-child(2n) {
-  background-image: url('/images/trend2.jpg');
+  background-image: url(../images/trend2.jpg);
 }
 
 .trends_card:nth-child(3n) {
-  background-image: url('/images/trend3.jpg');
+  background-image: url(../images/trend3.jpg);
 }
 
 
 .trends_card:nth-child(4n) {
-  background-image: url('/images/trend4.jpg');
+  background-image: url(../images/trend4.jpg);
 }
 
 
