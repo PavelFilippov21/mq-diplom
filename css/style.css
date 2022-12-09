@@ -158,6 +158,10 @@ ul {
   text-transform: uppercase;
 }
 
+.trends_card_text:hover {
+  color: #b59f5b;
+}
+
 .trends_card {
   position: relative;
   padding: 20px;
@@ -244,8 +248,13 @@ ul {
   text-decoration: none;
 }
 
-.category_item:not(:last-child) {
-  margin-right: 15px;
+
+.category_link:hover {
+  text-decoration: underline;
+}
+
+.category_link:not(last-child) {
+  margin-right: 20px;
 }
 
 .header_main {
@@ -543,6 +552,15 @@ ul {
   text-decoration: line-through;
 }
 
+.goods_text_link {
+  text-decoration: none;
+  color: #b59f5b;
+}
+
+.goods_text_link:hover {
+text-decoration: underline;
+}
+
 .goods_wrapper_card_desc_link {
   background-color: #b59f5b;
   padding: 21px 26px;
@@ -555,6 +573,9 @@ ul {
   font-weight: 700;
 }
 
+.goods_wrapper_card_desc_link:hover {
+  background-color: #000000;
+}
 
 .goods_wrapper_card_desc_heading {
   margin-bottom: 15px;
@@ -630,6 +651,10 @@ ul {
 }
 
 @media(max-width:1200px) {
+
+  .header {
+    background-image: url(../images/banner-bg-tablet.jpg);
+  }
 
   .container {
     padding-right: 20px;
