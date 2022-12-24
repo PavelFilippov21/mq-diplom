@@ -12,34 +12,41 @@
 <body>
   <header class="header">
     <div class="container">
-      <nav class="nav container">
-        <a href="#">
-          <img class="nav_img" src="svg/noemi-logo.svg" alt="noemi-logo" />
-        </a>
-        <ul class="menu_list">
-          <li class="menu_list_item">
-            <a class="menu_list_item_link" href="#">главная</a>
-          </li>
-          <li class="menu_list_item">
-            <a class="menu_list_item_link" href="#">посты</a>
-          </li>
-          <li class="menu_list_item">
-            <a class="menu_list_item_link" href="#">статьи</a>
-          </li>
-          <li class="menu_list_item">
-            <a class="menu_list_item_link" href="#">теги</a>
-          </li>
-          <li class="menu_list_item">
-            <a class="menu_list_item_link" href="#">тему</a>
-          </li>
-          <li class="menu_list_item">
-            <a class="menu_list_item_link" href="#">контакты</a>
-          </li>
-        </ul>
-      </nav>
+    </div>
+    <nav class="nav container">
+      <a href="#">
+        <img class="nav_img" src="svg/noemi-logo.svg" alt="noemi-logo" />
+      </a>
+      <button class="header_burger">
+        <span class="header_burger_span" aria-label="Кнопка меню"></span>
+      </button>
+      <ul class="menu_list">
+        <li class="menu_list_item">
+          <a class="menu_list_item_link" href="#">главная</a>
+        </li>
+        <li class="menu_list_item">
+          <a class="menu_list_item_link" href="#">посты</a>
+        </li>
+        <li class="menu_list_item">
+          <a class="menu_list_item_link" href="#">статьи</a>
+        </li>
+        <li class="menu_list_item">
+          <a class="menu_list_item_link" href="#">теги</a>
+        </li>
+        <li class="menu_list_item">
+          <a class="menu_list_item_link" href="#">тему</a>
+        </li>
+        <li class="menu_list_item">
+          <a class="menu_list_item_link" href="#">контакты</a>
+        </li>
+      </ul>
+    </nav>
     </div>
 
     <div class="hero">
+      <a class="nav_img-mobile" href="#">
+        <img src="svg/noemi-logo.svg" alt="noemi-logo" />
+      </a>
       <h1 class="hero_heading">
         Блок о творчесве, спорте,
         и обрaзе жизни
@@ -184,7 +191,7 @@
           </ul>
           <h2 class="header_main">
             <a class="header_main_link" href="#">
-              делаем модные принты наподушках для интерьера
+              делаем модные принты на подушках для интерьера
             </a>
           </h2>
           <div class="header_main_date">
@@ -335,7 +342,8 @@
         </div>
         <div class="goods_wrapper_card_desc">
           <h3 class="goods_wrapper_card_desc_heading">Подушки на диван</h3>
-          <p class="goods_wrapper_card_desc_text">Набор из двух подушек с модными принтами. Видео о создании <a class="goods_text_link" href="#">здесь.</a></p>
+          <p class="goods_wrapper_card_desc_text">Набор из двух подушек с модными принтами. Видео о создании <a
+              class="goods_text_link" href="#">здесь.</a></p>
           <div class="goods_wrapper_card_desc_price">
             <div class="goods_wrapper_card_desc_price_rub">
               <p class="not-price">1000 ₽</p>
@@ -351,7 +359,8 @@
         </div>
         <div class="goods_wrapper_card_desc">
           <h3 class="goods_wrapper_card_desc_heading">Кукла «Зайчик»</h3>
-          <p class="goods_wrapper_card_desc_text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="goods_text_link" href="#">весенняя серия постов</a> в блоге и
+          <p class="goods_wrapper_card_desc_text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a
+              class="goods_text_link" href="#">весенняя серия постов</a> в блоге и
             несколько подкастов.</p>
           <div class="goods_wrapper_card_desc_price">
             <div class="goods_wrapper_card_desc_price_rub">
@@ -367,7 +376,8 @@
         </div>
         <div class="goods_wrapper_card_desc">
           <h3 class="goods_wrapper_card_desc_heading">Шестиугольная рамка</h3>
-          <p class="goods_wrapper_card_desc_text">Необычная рамка для украшения дома из видео <a class="goods_text_link" href="#">«Как сделать рамку из подручных средств за 30 минут»</a> </p>
+          <p class="goods_wrapper_card_desc_text">Необычная рамка для украшения дома из видео <a class="goods_text_link"
+              href="#">«Как сделать рамку из подручных средств за 30 минут»</a> </p>
           <div class="goods_wrapper_card_desc_price">
             <div class="goods_wrapper_card_desc_price_rub">
               <p class="not-price">500 ₽</p>
@@ -402,6 +412,43 @@
       <p>Copyright © 2009–2019 City Blog LLC.</p>
     </div>
   </footer>
+  <div class="popup_mask">
+    <div class="popup_container">
+      <h2 class="popup_header">Ваш фидбек</h2>
+      <form class="popup_form" action="#">
+        <div class="popup_form_item">
+          <label class="popup_from_item_label" for="popup_select">Как часто вы заходите на сайт?</label>
+          <select class="popup_form_item_select" for="popup_select">
+            <option class="popup_form_item_select_option" selected>Почти каждый день</option>
+          </select>
+        </div>
+        <div class="popup_form_item">
+          <p class="popup_form_item_email">Вы подписаны на e-mail рассылку?</p>
+          <label class="popup_form_item_radio">
+            <input class="popup_form_item_radio_item" type="radio" name="radio-group" checked>
+            <span class="popup_form_item_radio_item_point">Да</span>
+          </label>
+          <label class="popup_form_item_radio">
+            <input class="popup_form_item_radio_item" type="radio" name="radio-group">
+            <span class="popup_form_item_radio_item_point">Нет</span>
+          </label>
+        </div>
+        <div class="popup_form_item">
+          <label class="popup_from_item_label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?
+            <textarea class="popup_form_item_textarea">Может, больше рецептов?</textarea>
+          </label>
+        </div>
+        <button class="popup_form_btn" type="button">
+          <span class="popup_form_btn_text">отправить</span>
+          <span class="visually-hidden">Кнопка отправить</span>
+        </button>
+      </form>
+      <button class="popup_close_btn" type="button"><img class="popup_close_btn_icon" src="svg/form-x.svg" alt="#"></button>
+    </div>
+  </div>
+
+
+
 </body>
 
 </html>
